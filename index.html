@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="aiconTech">
+<title>aiconTech</title>
+<!-- link to your style sheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- link to google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Helvetica Neue" rel="stylesheet">
+<!-- link to Font awesome css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-wrapper">
+            <header>
+                <div class="navigation" id="myDIV">
+	                <nav class="ij-effect-20">
+    	                <a class="btn active" href="#"><span data-hover="Home">Home</span></a>
+    	                    <ul class="social-media-icons">
+				                <li><a href="https://www.facebook.com/profile.php?id=61567859106413"><i class="fa fa-facebook"></i></a></li>
+				                <li><a href="https://x.com/aicontechgiants"><i class="fa fa-twitter"></i></a></li>
+				                <li><a href="https://www.instagram.com/aicontechnology/"><i class="fa fa-instagram"></i></a></li>
+			                </ul>
+	                </nav>
+                </div>
+                <script>
+                    // JS for the button on the nav 
+                    var header = document.getElementById("myDIV");
+                    var btns = header.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";});
+                    }
+                </script> 
+            </header>
+            <div class="content_wrapper">
+                <div class="banner_wrapper">
+                    <img class="banner-image" alt="banner image" src="images/mainbanner.png"/>
+                </div> 
+                <div class="product-row">
+                    <div class="product-column" style="padding-left: 15px; background-color:#ffffff;">
+                          <div class="product-column-child" style="background-color:#000000; left:15%;">
+                              <h3>App development</h3> 
+                              <div class="slideshow-container">
+                                    <div class="mySlides1 fadeit">
+                                            <img src="images/webdesign.png" alt="Web Design" style="max-width:100%;" />
+                                        <div class="text">web design</div>
+                                    </div>
+          
+                                    <div class="mySlides1 fadeit">
+                                            <img src="images/mobileapps.png" alt="Mobile Apps" style="max-width:100%;" />
+                                        <div class="text">mobile apps</div>
+                                    </div>
+          
+                                    <div class="mySlides1 fadeit">
+                                            <img src="images/desktopapps.png" alt="Desktop Apps"  style="max-width:100%;" />
+                                        <div class="text">desktop apps</div>
+                                    </div>
+                                    <br>
+                                  <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="product-column" style="padding-left: 15px; background-color:#ffffff;text-align: center;">
+                          <div class="product-column-child" style="background-color:#F58634;">
+                            <div class="slideshow-container">
+                                <h3>Repairs & Sales</h3>    
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/infotechRepairs.png" alt="IT Repairs" style="max-width:100%;" />
+                                    <div class="text">IT Repairs</div>
+                                </div>
+          
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/infotechSales.png" alt="IT Sales" style="max-width:100%;" />
+                                    <div class="text">IT Sales</div>
+                                </div>
+          
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/mobiledevicesSales.png" alt="mobile devices Sales"  style="max-width:100%;" />
+                                    <div class="text">Mobile Devices Sales</div>
+                                </div>
+                                    <br>
+                                  <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                            </div>
+                        </div>  
+                    </div><!-- Closing div for the class product-column-child --> 
+                    <div class="product-column" style="padding-left: 15px; background-color:#ffffff;">
+                          <div class="product-column-child" style="background-color:#ED3237;">
+                              <div class="slideshow-container">
+                              <h3>IT Services</h3>
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/graphicsDesign.png" alt="Graphics Design" style="max-width:100%;" />
+                                    <div class="text">co Documents</div>
+                                </div>
+          
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/printingServices.png" alt="Printing Services" style="max-width:100%;" />
+                                    <div class="text">Printing Services</div>
+                                </div>
+          
+                                <div class="mySlides1 fadeit">
+                                        <img src="images/internetServices.png" alt="internet Services"  style="max-width:100%;" />
+                                    <div class="text">internet Services</div>
+                                </div>
+                                    <br>
+                                  <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                  </div>
+                            </div>
+                          </div>
+                          </div>
+                </div>
+              </div>
+              <script>
+                  var slideIndex = 0;
+                  showSlides();
+          
+                  function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides1");
+                    var dots = document.getElementsByClassName("dot" , "");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 1000); // Change image every 1 seconds
+                  }
+              </script>   
+            </div><!-- Closing div for the class product-row ---> 
+                <div class="clearfooter"></div>  
+       </div>
+        <div class="footer">
+            <footer class="footer-iekon">
+                <div class="footer-top" style="background-color:#000000; color: #ffffff;">
+                      <div class="footer-contacts">
+                         <ul>
+                              <br>
+                              <li><i class="fa fa-2x fa-phone"></i>&nbsp;&nbsp;<h2>Call/App : +263710 980 519</h2></li>
+                              <br>
+                              <li><i class="fa fa-2x fa-envelope"></i><a href="#"><h2>aicontechgiants@gmail.com</a></h2></li>
+                              <br>
+                          </ul>  
+                      </div>
+             
+                    </div>
+                    <div class="footer-email-form" style="background-color:#F58634;">
+                       <h1 style="padding-top: 10px;"> Write us an email </h1>
+                        <form action="https://formsubmit.co/aicontech@gmail.com" method="POST">
+                            <ul class="form-style-1">
+                                <!--Honeypot -->
+                                <li>
+                                    <input type="text" name="_honey" style="display: none;">
+                                </li>
+                                <!--Display Captcha -->
+                                <li>
+                                    <input type="hidden" name="_captcha" value="false">
+                                </li>
+                                <!--Thank you page after successful submission -->
+                                <li>
+                                    <input type="hidden" name="_next" value="https://github.com/aicontechnology/aicontech/thanks.html">
+                                </li>
+                                <li>
+                                    <input type="text" name="name" class="field-long" placeholder="Enter your name" required>
+                                </li>
+                                <li>
+                                    <input type="email" name="email" class="field-long" placeholder="Enter your email" required>
+                                </li>
+
+                                <li>
+                                    <input type="text" name="phone" class="field-long" placeholder="Enter your phone number">
+                                </li>
+                                <li>
+                                    <input type="text" name="subject" class="field-long" placeholder="Enter the subject">
+                                </li>
+                                <li>
+                                    <textarea name="message" class="field-textarea" placeholder="Enter your message" required></textarea>    
+                                </li>
+                                <button class="footer-button" type="submit" style="background-color:#000000;margin-top: 10px;margin-bottom: 10px;">Send Message</button>
+                            </ul>
+                        </form>
+                    </div>
+          
+                    <div class="footer-middle" style="background-color:#ED3237;">
+                        <h2> Follow us on</h2>
+                          <ul>
+                              <li><a href="https://www.facebook.com/profile.php?id=61567859106413"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="https://x.com/aicontechgiants"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="https://www.instagram.com/aicontechnology/"><i class="fa fa-instagram"></i></a></li>
+                          </ul>   
+                    </div>
+                    <div class="footer-bottom">
+                        <p>@aiconTech 2024</p>
+                     </div>
+          </footer>
+       </div><!-- Closing div for the class container-wrapper -->     
+</body>
+</html>
